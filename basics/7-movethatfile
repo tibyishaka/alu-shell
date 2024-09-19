@@ -1,3 +1,2 @@
 #!/bin/bash
-cd /tmp
 mv $(touch /tmp/betty && echo /tmp/betty) /tmp/my_first_directory
