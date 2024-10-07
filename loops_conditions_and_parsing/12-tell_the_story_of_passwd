@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Set IFS to ":" since /etc/passwd fields are separated by ":"
 IFS=":"
 
