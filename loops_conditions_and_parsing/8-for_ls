@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#displaying content of current directory using for loop
+ls="$(ls)"
+for list in $ls
+do
+	file=$(echo "$list" | cut -d"-" -f 2)
+	echo "$file"
+done
