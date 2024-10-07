@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#making 4th and 8th iteration display bad luck other best school using while loop
+i=10 
+while ((i>=1));
+do
+
+if ((i==3));then 
+echo "bad luck"
+elif ((i==7));then
+echo "bad luck"
+else 
+echo "Best School"
+fi
+((i--))
+done
