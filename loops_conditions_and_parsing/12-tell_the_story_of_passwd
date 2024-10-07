@@ -1,9 +1,10 @@
-#!/usr/bin/env bash
-#telling story of tec/passwd
+#!/bin/bash
+
+# Set IFS to ":" since /etc/passwd fields are separated by ":"
 IFS=":"
 
-# Read the /etc/passwd file line by line
-while read -r username password userid groupid comment homedir shell; do
-    echo "The user $username is part of the $groupid gang, lives in $homedir and rides $shell. USER ID's place is protected by the passcode $password, more info about the user here: $comment"
+# Read and process /etc/passwd line by line
+while read -r username password user_id group_id user_info home_directory shell; do
+  echo "The user $username is part of the $group_id gang, lives in $home_directory and rides $shell. USER ID's place is protected by the passcode $password, more info about the user here: $user_info"
 done < /etc/passwd
 
