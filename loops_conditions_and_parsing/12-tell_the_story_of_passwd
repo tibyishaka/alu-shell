@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#telling story of tec/passwd
+IFS=":"
+
+# Read the /etc/passwd file line by line
+while read -r username password userid groupid comment homedir shell; do
+    echo "The user $username is part of the $groupid gang, lives in $homedir and rides $shell. USER ID's place is protected by the passcode $password, more info about the user here: $comment"
+done < /etc/passwd
+
