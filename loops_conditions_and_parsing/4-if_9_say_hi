@@ -1,0 +1,11 @@
+#!/usr/bin/env bash 
+#diplaying best school but if iteration 9 say hi using while loop
+i=9
+while ((i>=0));
+do
+echo "Best School"
+if ((i==1));then 
+ echo "Hi"
+fi
+((i--))
+done
